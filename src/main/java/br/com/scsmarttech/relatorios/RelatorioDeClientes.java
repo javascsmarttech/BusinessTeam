@@ -16,7 +16,7 @@ import br.com.scsmarttech.dao.ClienteDAO;
 public class RelatorioDeClientes {
 	public static void main(String[] args) throws JRException, SQLException {
 
-		System.out.println("Gerando relatório...");
+		System.out.println("Gerando relatï¿½rio...");
 		// lista com os nossos clientes
 		ClienteDAO listaCliente = new ClienteDAO();
 		
@@ -41,6 +41,8 @@ public class RelatorioDeClientes {
 		// exportacao do relatorio para outro formato, no caso PDF
 		JasperExportManager.exportReportToPdfFile(print,
 				"WebContent/Clientes_Cmnet.pdf");
-		System.out.println("Relatório gerado.");
+		JasperExportManager.exportReportToHtmlFile(print,
+				"WebContent/Clientes_Cmnet.html");
+		System.out.println("Relatï¿½rio gerado.");
 	}
 }

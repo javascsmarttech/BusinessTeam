@@ -37,5 +37,22 @@
    		</properties>
 	</persistence-unit>
 	
+	<persistence-unit name="incm" transaction-type="RESOURCE_LOCAL">
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@172.27.171.244:1521:cmn" />
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+			<property name="javax.persistence.jdbc.user" value="noer" />
+			<property name="javax.persistence.jdbc.password" value="noer123" />
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+
+   		</properties>
+	</persistence-unit>
+	
 
 </persistence>
