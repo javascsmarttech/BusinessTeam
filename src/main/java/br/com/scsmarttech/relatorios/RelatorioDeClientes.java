@@ -23,7 +23,7 @@ public class RelatorioDeClientes {
 		List<Cliente> lista = listaCliente.getLista();
 			
 		// compilacao do JRXML
-		JasperReport report = JasperCompileManager.compileReport("C:/Users/FELIPE/git/BusinessTeam/WebContent/Relatorios/Clientes_Cmnet.jrxml");
+		JasperReport report = JasperCompileManager.compileReport("WebContent/Relatorios/Clientes_Cmnet.jrxml");
 
 		// preenchimento do relatorio, note que o metodo recebe 3 parametros:
 		// 1 - o relatorio
@@ -40,7 +40,7 @@ public class RelatorioDeClientes {
 
 		// exportacao do relatorio para outro formato, no caso PDF
 		JasperExportManager.exportReportToPdfFile(print,
-				"C:/Users/FELIPE/git/BusinessTeam/WebContent/Relatorios/Clientes_Cmnet.pdf");
+				"WebContent/Clientes_Cmnet.pdf");
 		System.out.println("Relatório gerado.");
 	}
 }
