@@ -3,15 +3,12 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-	<queryString>
-		<![CDATA[select * from pessoa order by idpessoa,razaosocial]]>
-	</queryString>
-	<field name="IDPESSOA" class="java.math.BigDecimal"/>
-	<field name="NOME" class="java.lang.String"/>
-	<field name="TIPO" class="java.lang.String"/>
-	<field name="RAZAOSOCIAL" class="java.lang.String"/>
-	<field name="EMAIL" class="java.lang.String"/>
-	<field name="NUMDOCUMENTO" class="java.lang.String"/>
+	<field name="idpessoa" class="java.math.BigDecimal"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.String"/>
+	<field name="razaosocial" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="numdocumento" class="java.lang.String"/>
 	<background>
 		<band/>
 	</background>
@@ -33,10 +30,6 @@
 					</textElement>
 					<text><![CDATA[Cadastro de clientes CM]]></text>
 				</staticText>
-				<image>
-					<reportElement uuid="9f49f79a-e07d-4a46-8e13-5a847e8676ef" x="588" y="31" width="218" height="53"/>
-					<imageExpression><![CDATA["/Users/andrenoer/git/BusinessSoftware/src/Imagens/CMNet.png"]]></imageExpression>
-				</image>
 			</frame>
 		</band>
 	</title>
@@ -53,28 +46,28 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[NOME]]></text>
+				<text><![CDATA[nome]]></text>
 			</staticText>
 			<staticText>
 				<reportElement uuid="d72a6b15-00fb-4fd7-bb39-b360f030b51f" mode="Opaque" x="292" y="1" width="80" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[TIPO]]></text>
+				<text><![CDATA[tipo]]></text>
 			</staticText>
 			<staticText>
 				<reportElement uuid="37df35d1-eb56-4c98-94aa-ccfca806480c" mode="Opaque" x="372" y="0" width="246" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[EMAIL]]></text>
+				<text><![CDATA[email]]></text>
 			</staticText>
 			<staticText>
 				<reportElement uuid="49c5171d-3453-4143-a90f-10f0c0130813" mode="Opaque" x="618" y="0" width="181" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[NUMDOCUMENTO]]></text>
+				<text><![CDATA[numdocumento]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
@@ -88,28 +81,28 @@
 				<textElement>
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{NOME}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement uuid="de36dd43-7e90-4037-b3b2-c6f7e749c90e" x="292" y="0" width="80" height="20"/>
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{TIPO}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement uuid="98111ed4-d2d4-42a9-a39e-5735bdf7ac5b" x="372" y="0" width="244" height="20"/>
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{EMAIL}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement uuid="8659429e-da27-4a80-b69c-ee68a1511a5d" x="616" y="0" width="183" height="20"/>
 				<textElement textAlignment="Center">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{NUMDOCUMENTO}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{numdocumento}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
