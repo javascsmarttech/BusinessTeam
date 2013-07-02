@@ -1,2 +1,12 @@
 eclipse.preferences.version=1
+encoding//src/main/java/br/com/scsmarttech/categoria/Categoria.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/categoria/CategoriaDAO.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/categoria/CategoriaRN.java=UTF-8
 encoding//src/main/java/br/com/scsmarttech/relatorios/RelatorioDeClientes.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/usuario/UsuarioRN.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/util/DAOException.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/util/DAOFactory.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/util/HibernateUtil.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/web/UsuarioBean.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/web/converter/CategoriaConverter.java=UTF-8
+encoding//src/main/java/br/com/scsmarttech/web/util/RelatorioUtil.java=UTF-8
